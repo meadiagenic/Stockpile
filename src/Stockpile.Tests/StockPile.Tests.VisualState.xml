@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1000]C:\projects\GitHub\Stockpile\src\Stockpile.Tests\StockPile.Tests.nunit</TopNode>
+  <SelectedNode>[0-1008]Stockpile.Tests.EntryTests.EntryTestsFixture.Can_Create_Entry</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1000]C:\projects\GitHub\Stockpile\src\Stockpile.Tests\StockPile.Tests.nunit" Expanded="true" />
+    <Node UniqueName="[0-1009]C:\projects\GitHub\Stockpile\src\Stockpile.Tests\bin\Debug\Stockpile.Tests.dll" Expanded="true" />
+    <Node UniqueName="[0-1010]Stockpile" Expanded="true" />
+    <Node UniqueName="[0-1011]Stockpile.Tests" Expanded="true" />
+    <Node UniqueName="[0-1013]Stockpile.Tests.CacheStoreTests" Expanded="true" />
+    <Node UniqueName="[0-1004]Stockpile.Tests.CacheStoreTests.Fetch" Expanded="true" />
+    <Node UniqueName="[0-1012]Stockpile.Tests.CacheTests" Expanded="true" />
+    <Node UniqueName="[0-1001]Stockpile.Tests.CacheTests.CacheDefaults" Expanded="true" />
+    <Node UniqueName="[0-1014]Stockpile.Tests.EntryTests" Expanded="true" />
+    <Node UniqueName="[0-1007]Stockpile.Tests.EntryTests.EntryTestsFixture" Expanded="true" />
+  </Nodes>
+</VisualState>

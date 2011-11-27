@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\projects\GitHub\Stockpile\src\Stockpile.Tests\StockPile.Tests.nunit" total="1" errors="1" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2011-11-27" time="00:31:00">
+  <environment nunit-version="2.5.10.11092" clr-version="2.0.50727.5448" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\projects\GitHub\Stockpile\src\packages\NUnit.2.5.10.11092\tools" machine-name="MEAD-MAC" user="Mead" user-domain="Mead-MAC" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Project" name="C:\projects\GitHub\Stockpile\src\Stockpile.Tests\StockPile.Tests.nunit" executed="True" result="Failure" success="False" time="0.530" asserts="0">
+    <results>
+      <test-suite type="Assembly" name="C:\projects\GitHub\Stockpile\src\Stockpile.Tests\bin\Debug\Stockpile.Tests.dll" executed="True" result="Failure" success="False" time="0.526" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="Stockpile" executed="True" result="Failure" success="False" time="0.526" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="Tests" executed="True" result="Failure" success="False" time="0.525" asserts="0">
+                <results>
+                  <test-suite type="Namespace" name="EntryTests" executed="True" result="Failure" success="False" time="0.525" asserts="0">
+                    <results>
+                      <test-suite type="TestFixture" name="EntryTestsFixture" executed="True" result="Failure" success="False" time="0.524" asserts="0">
+                        <results>
+                          <test-case name="Stockpile.Tests.EntryTests.EntryTestsFixture.Can_Create_Entry" executed="True" result="Error" success="False" time="0.519" asserts="0">
+                            <failure>
+                              <message><![CDATA[System.Collections.Generic.KeyNotFoundException : The specified key 'compressed' does not exist in the ExpandoObject.]]></message>
+                              <stack-trace><![CDATA[at System.Dynamic.ExpandoObject.System.Collections.Generic.IDictionary<System.String,System.Object>.get_Item(String key)
+at Stockpile.Entry.Create(Object rawValue, DateTime createdAt, Object options) in C:\projects\GitHub\Stockpile\src\Stockpile\Entry.cs:line 27
+at Stockpile.Tests.EntryTests.EntryTestsFixture.Can_Create_Entry() in C:\projects\GitHub\Stockpile\src\Stockpile.Tests\EntryTests\EntryTestsFixture.cs:line 16
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
