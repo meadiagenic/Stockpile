@@ -8,7 +8,7 @@
     <ProjectGuid>{47FF1F08-B439-4EC5-A457-0BC10C0F9D18}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Stockpile</RootNamespace>
+    <RootNamespace>System.Caching</RootNamespace>
     <AssemblyName>Stockpile</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -41,14 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cache.cs" />
+    <Compile Include="Stockpile.cs" />
     <Compile Include="CacheStore.cs" />
     <Compile Include="Entry.cs" />
-    <Compile Include="ICacheStore.cs" />
-    <Compile Include="ICacheStore.Extensions.cs" />
+    <Compile Include="ICache.cs" />
     <Compile Include="MemoryCacheStore.cs" />
     <Compile Include="Object.Extensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ICache.Extensions.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

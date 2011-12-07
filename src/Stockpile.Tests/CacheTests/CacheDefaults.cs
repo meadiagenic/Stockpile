@@ -1,23 +1,24 @@
-﻿namespace Stockpile.Tests.CacheTests
+﻿using System.Caching;
+using FluentAssertions;
+using NUnit.Framework;
+
+namespace StockpileTests.CacheTests
 {
-    using FluentAssertions;
-    using NUnit.Framework;
+	[TestFixture]
+	public class CacheDefaults
+	{
 
-    [TestFixture]
-    public class CacheDefaults
-    {
+		[Test]
+		public void DefaultCacheStore_Should_Be_Memory_Cache_Store()
+		{
+			Stockpile.Store.Should().NotBeNull().And.BeOfType<MemoryStore>();
 
-        [Test]
-        public void DefaultCacheStore_Should_Be_Null_Cache_Store()
-        {
-            Cache.Store.Should().NotBeNull().And.BeOfType<MemoryCacheStore>();
+		}
 
-        }
-
-        [Test]
-        public void EnableCaching_Should_Be_False()
-        {
-            Cache.EnableCaching.Should().BeFalse();
-        }
-    }
+		[Test]
+		public void EnableCaching_Should_Be_True()
+		{
+			Stockpile.EnableCaching.Should().BeTrue();
+		}
+	}
 }

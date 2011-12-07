@@ -1,22 +1,37 @@
-﻿namespace Stockpile
+﻿namespace System.Caching
 {
 
-    public class MemoryCacheStore : CacheStore
-    {
+	public class MemoryStore : Store
+	{
 
-        protected override object ReadEntry(string key, object options = null)
-        {
-            throw new System.NotImplementedException();
-        }
+		public override void CleanUp()
+		{
+			throw new System.NotImplementedException();
+		}
 
-        protected override void WriteEntry(string key, object entry, object options = null)
-        {
-            throw new System.NotImplementedException();
-        }
+		public override void Clear()
+		{
+			throw new System.NotImplementedException();
+		}
 
-        protected override void DeleteEntry(string key, object options = null)
-        {
-            throw new System.NotImplementedException();
-        }
-    }
+		public override int Decrement(string key, int amount = 1)
+		{
+			throw new System.NotImplementedException();
+		}
+
+		protected override object ReadEntry(string key)
+		{
+			throw new System.NotImplementedException();
+		}
+
+		protected override object WriteEntry(string key, object entry)
+		{
+			throw new System.NotImplementedException();
+		}
+
+		protected override object DeleteEntry(string key)
+		{
+			throw new System.NotImplementedException();
+		}
+	}
 }

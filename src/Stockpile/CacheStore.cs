@@ -1,40 +1,37 @@
-﻿namespace Stockpile
+﻿namespace System.Caching
 {
-    using System;
+	public abstract class Store
+	{
+		public abstract void CleanUp();
 
-    public abstract class CacheStore : ICacheStore
-    {
+		public abstract void Clear();
 
-        protected abstract object ReadEntry(string key, object options = null);
+		public abstract int Decrement(string key, int amount = 1);
 
-        protected abstract void WriteEntry(string key, object entry, object options = null);
+		public virtual bool Delete(string key)
+		{
+			return false;
+		}
 
-        protected abstract void DeleteEntry(string key, object options = null);
+		protected abstract object ReadEntry(string key);
 
+		protected abstract object WriteEntry(string key, object entry);
 
+		protected abstract object DeleteEntry(string key);
 
-        public virtual T Fetch<T>(string name, Func<T> callIfMiss, dynamic options = null)
-        {
-            return Read<T>(name, options);
-        }
+		public T Fetch<T>(string name, Func<T> callIfMiss, object options = null)
+		{
+			throw new NotImplementedException();
+		}
 
+		public T Read<T>(string name, object options = null)
+		{
+			throw new NotImplementedException();
+		}
 
-        public T Read<T>(string name, object options = null)
-        {
-            options = options ?? new object();
-            var entry = ReadEntry(name, options);
-            if (entry != null)
-            {
-
-            }
-            return default(T);
-        }
-
-
-        public void Write<T>(string name, T value, object options = null)
-        {
-            var entry = new Entry(value, options);
-            WriteEntry(name, entry, options);
-        }
-    }
+		public void Write<T>(string name, T value, object options = null)
+		{
+			throw new NotImplementedException();
+		}
+	}
 }
